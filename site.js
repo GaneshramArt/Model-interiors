@@ -96,7 +96,7 @@
     b.addEventListener('click', () => {
       tabs.forEach(x => x.setAttribute('aria-selected', x===b));
       const k = b.dataset.k, name = b.firstChild.textContent.trim();
-      tA.src = `img/${k}-after.webp`; tB.src = `img/${k}-before.webp`;
+      tA.src = `${k}-after.webp`; tB.src = `${k}-before.webp`;
       tA.alt = 'After: ' + name.toLowerCase() + ' concept'; tB.alt = 'Before: ' + name.toLowerCase() + ' as found';
       tR.setAttribute('aria-label', 'Compare before and after, ' + name.toLowerCase());
       tD.textContent = b.dataset.d; tR.value = 50; tC.style.setProperty('--p','50%');
@@ -106,7 +106,7 @@
       if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault(); const n=tabs[(i-1+tabs.length)%tabs.length]; n.focus(); n.click();}
     });
   });
-  ['kitchen','lounge','hall'].forEach(k => { const a=new Image(); a.src=`img/${k}-after.webp`; const b=new Image(); b.src=`img/${k}-before.webp`; });
+  ['kitchen','lounge','hall'].forEach(k => { const a=new Image(); a.src=`${k}-after.webp`; const b=new Image(); b.src=`${k}-before.webp`; });
   }
 
   // form

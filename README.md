@@ -13,7 +13,7 @@ Static, multi-page website for **Model Interiors**, a luxury residential interio
 | Process | `process.html` |
 | Contact (form + WhatsApp enquiry) | `contact.html` |
 
-Shared styles live in `site.css` and behaviour in `site.js`. Images are in `img/` (WebP) and the hero and walkthrough films are in `video/` (MP4).
+Shared styles live in `site.css` and behaviour in `site.js`. Images (WebP) and the hero and walkthrough films (MP4) sit alongside the pages in the root folder.
 
 ## Run locally
 
